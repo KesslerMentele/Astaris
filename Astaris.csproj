@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Content\Items\Placeables\AquamarineGem.png" />
+	  <None Remove="Content\Items\Placeables\StarmetalBar.png" />
+	  <None Remove="Content\Items\RockCrystal.png" />
+	  <None Remove="Content\Items\Tools\CrystalAxe.png" />
+	  <None Remove="Content\Items\Tools\CrystalHammer.png" />
+	  <None Remove="Content\Items\Tools\CrystalPickaxe.png" />
+	  <None Remove="Content\Items\Weapons\CrystalSword.png" />
+	  <None Remove="Content\Projectiles\AquamarineShaleBallProjectile.PNG" />
+	  <None Remove="Content\Projectiles\Weapons\CrystalShortswordProjectile.png" />
+	  <None Remove="Content\Tiles\AquamarineShale.png" />
+	  <None Remove="Content\Tiles\RockCrystal.png" />
+	  <None Remove="Content\Tiles\RockCrystalOre.PNG" />
+	</ItemGroup>
+
+	<!-- References -->
+	<ItemGroup>
+	  <Folder Include="Assets\Music\" />
+	  <Folder Include="Assets\Textures\" />
+	  <Folder Include="Assets\Sounds\" />
+	</ItemGroup>
+
+</Project>

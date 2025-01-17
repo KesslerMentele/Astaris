@@ -1,0 +1,56 @@
+Items: {
+	RockCrystal: {
+		DisplayName: Rock Crystal
+		Tooltip: ""
+	}
+
+	CrystalSword: {
+		DisplayName: Crystal Sword
+		Tooltip: ""
+	}
+
+	CrystalAxe: {
+		DisplayName: Crystal Axe
+		Tooltip: ""
+	}
+
+	CrystalHammer: {
+		DisplayName: Crystal Hammer
+		Tooltip: ""
+	}
+
+	CrystalPickaxe: {
+		DisplayName: Crystal Pickaxe
+		Tooltip: ""
+	}
+
+	CrystalShortsword: {
+		DisplayName: Crystal Shortsword
+		Tooltip: ""
+	}
+
+	StarmetalBar: {
+		DisplayName: Starmetal Bar
+		Tooltip: ""
+	}
+
+	StarmetalOre: {
+		DisplayName: Starmetal Ore
+		Tooltip: ""
+	}
+
+	AquamarineGem: {
+		DisplayName: Aquamarine Gem
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	CrystalShortswordProjectile.DisplayName: Crystal Shortsword Projectile
+	AquamarineShaleBallFallingProjectile.DisplayName: Aquamarine Shale Ball Falling Projectile
+}
+
+Tiles: {
+	StarmetalOre.MapEntry: Starmetal Ore
+	RockCrystalOre.MapEntry: Rock Crystal Ore
+}
