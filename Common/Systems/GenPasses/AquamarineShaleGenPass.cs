@@ -20,7 +20,7 @@ namespace Astaris.Common.Systems.GenPasses
             progress.Message = "Spawning Aquamarine Shale";
 
             // Aquamarine Shale
-            int maxToSpawn = WorldGen.genRand.Next(100,250);
+            int maxToSpawn = WorldGen.genRand.Next(400,1000);
             int numSpawned = 0;
             int attempts = 0;
             while(numSpawned < maxToSpawn)

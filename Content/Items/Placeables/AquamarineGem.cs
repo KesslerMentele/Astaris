@@ -18,6 +18,8 @@ namespace Astaris.Content.Items.Placeables
             Item.height = 16;
             Item.value = Item.buyPrice(copper: 25);
             Item.maxStack = 999;
+            
+            Item.createTile = ModContent.TileType<Tiles.AquamarineShale>();
         }
     }
 }

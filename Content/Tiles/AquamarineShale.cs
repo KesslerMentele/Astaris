@@ -16,8 +16,7 @@ namespace Astaris.Content.Tiles
             Main.tileMergeDirt[Type] = true;
             Main.tileSpelunker[Type] = true;
             Main.tileBlockLight[Type] = true;
-
-            Main.tileSand[Type] = true;
+            
             TileID.Sets.ForAdvancedCollision.ForSandshark[Type] = true;
             TileID.Sets.CanBeDugByShovel[Type] = true;
             TileID.Sets.Falling[Type] = true;
@@ -25,7 +24,7 @@ namespace Astaris.Content.Tiles
 
             // Tells which falling projectile to spawn when the tile should fall.
             TileID.Sets.FallingBlockProjectile[Type] = 
-                new TileID.Sets.FallingBlockProjectileInfo(ModContent.ProjectileType<AquamarineShaleBallProjectile>(), 10);
+                new TileID.Sets.FallingBlockProjectileInfo(ModContent.ProjectileType<AquamarineShaleBallFallingProjectile>(), 10);
             TileID.Sets.ChecksForMerge[Type] = true;
             MineResist = 1f;
             DustType = DustID.Sand;
