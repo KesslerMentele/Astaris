@@ -46,22 +46,22 @@ namespace Astaris.Content.Items.Weapons
 
             switch (phase)
             {
-                case MoonPhase.Full:
+                case MoonPhase.Empty:
                     damage *= 2.0f;
                     break;
-                case MoonPhase.ThreeQuartersAtLeft:
-                case MoonPhase.ThreeQuartersAtRight:
+                case MoonPhase.QuarterAtLeft:
+                case MoonPhase.QuarterAtRight:
                     damage *= 1.75f;
                     break;
                 case MoonPhase.HalfAtLeft:
                 case MoonPhase.HalfAtRight:
                     damage *= 1.5f;
                     break;
-                case MoonPhase.QuarterAtLeft:
-                case MoonPhase.QuarterAtRight:
+                case MoonPhase.ThreeQuartersAtLeft:
+                case MoonPhase.ThreeQuartersAtRight:
                     damage *= 1.25f;
                     break;
-                case MoonPhase.Empty:
+                case MoonPhase.Full:
                     damage *= 1f;
                     break;
             }
