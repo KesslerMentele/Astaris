@@ -43,6 +43,11 @@ Items: {
 		DisplayName: Aquamarine Gem
 		Tooltip: ""
 	}
+
+	StarlightAltar: {
+		DisplayName: Starlight Altar
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -50,4 +55,7 @@ Projectiles: {
 	AquamarineShaleBallFallingProjectile.DisplayName: Aquamarine Shale Ball Falling Projectile
 }
 
-Tiles.RockCrystalOre.MapEntry: Rock Crystal Ore
+Tiles: {
+	RockCrystalOre.MapEntry: Rock Crystal Ore
+	StarlightAltar.MapEntry: Starlight Altar
+}

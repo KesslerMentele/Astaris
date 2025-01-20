@@ -13,8 +13,8 @@ Mods: {
 		}
 
 		ItemTooltip: {
-			CrystalSword: Deals increased damage under a full moon.
-			CrystalShortsword: Deals increased damage under a full moon.
+			CrystalSword: Deals more damage the smaller the moon.
+			CrystalShortsword: Deals more damage the smaller the moon.
 		}
 
 		Tiles: {
