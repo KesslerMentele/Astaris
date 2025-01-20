@@ -8,7 +8,7 @@ using Terraria.ID;
 
 namespace Astaris.Content.Tiles
 {
-	internal class AstralisBars : ModTile
+	internal class AstarisBars : ModTile
 	{
 		public override void SetStaticDefaults()
 		{

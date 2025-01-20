@@ -29,7 +29,7 @@ namespace Astaris.Content.Items.Placeables
             Item.useTurn = true;
             Item.autoReuse = true;
 
-            Item.createTile = ModContent.TileType<Tiles.AstralisBars>();
+            Item.createTile = ModContent.TileType<Tiles.AstarisBars>();
             Item.placeStyle = 0;
         }
 
