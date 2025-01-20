@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Astaris.Content.Projectiles.Weapons;
 using Astaris.Content.Items.Placeables;
+using Terraria.Enums;
 
 namespace Astaris.Content.Items.Weapons
 {
@@ -39,6 +40,34 @@ namespace Astaris.Content.Items.Weapons
             Item.shoot = ModContent.ProjectileType<CrystalShortswordProjectile>();
         }
 
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            MoonPhase phase = Main.GetMoonPhase();
+
+            switch (phase)
+            {
+                case MoonPhase.Full:
+                    damage *= 2.0f;
+                    break;
+                case MoonPhase.ThreeQuartersAtLeft:
+                case MoonPhase.ThreeQuartersAtRight:
+                    damage *= 1.75f;
+                    break;
+                case MoonPhase.HalfAtLeft:
+                case MoonPhase.HalfAtRight:
+                    damage *= 1.5f;
+                    break;
+                case MoonPhase.QuarterAtLeft:
+                case MoonPhase.QuarterAtRight:
+                    damage *= 1.25f;
+                    break;
+                case MoonPhase.Empty:
+                    damage *= 1f;
+                    break;
+            }
+			
+        }
+        
         public override void AddRecipes()
         {
             CreateRecipe()
