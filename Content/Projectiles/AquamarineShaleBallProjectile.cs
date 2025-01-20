@@ -1,4 +1,4 @@
-﻿using Astaris.Content.Items.Placeables;
+﻿using Astaris.Content.Items;
 using Astaris.Content.Tiles;
 using Terraria;
 using Terraria.ID;

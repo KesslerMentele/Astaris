@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Astaris.Content.Projectiles;
-using Astaris.Content.Items.Placeables;
+using Astaris.Content.Items;
 
 namespace Astaris.Content.Tiles
 {

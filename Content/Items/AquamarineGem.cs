@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 
-namespace Astaris.Content.Items.Placeables
+namespace Astaris.Content.Items
 {
     internal class AquamarineGem : ModItem
     {
