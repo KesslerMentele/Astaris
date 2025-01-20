@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Terraria.ObjectData;
 using static Terraria.ID.ContentSamples.CreativeHelper;
 using Terraria.Enums;
+using Terraria.Localization;
 
 namespace Astaris.Content.Tiles
 {
@@ -27,7 +28,8 @@ namespace Astaris.Content.Tiles
             HitSound = SoundID.Shatter;
             DustType = DustID.GemDiamond;
 
-
+            AddMapEntry(new Color(141, 165, 190), CreateMapEntryName());
+            
             // PLACED ON FLOOR
             TileObjectData.newTile.CopyFrom(TileObjectData.Style1x1);
             TileObjectData.newTile.StyleHorizontal = true;

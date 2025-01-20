@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 
+
+// UNUSED
 namespace Astaris.Content.Tiles
 {
     internal class RockCrystalOre : ModTile

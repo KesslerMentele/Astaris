@@ -50,7 +50,4 @@ Projectiles: {
 	AquamarineShaleBallFallingProjectile.DisplayName: Aquamarine Shale Ball Falling Projectile
 }
 
-Tiles: {
-	StarmetalOre.MapEntry: Starmetal Ore
-	RockCrystalOre.MapEntry: Rock Crystal Ore
-}
+Tiles.RockCrystalOre.MapEntry: Rock Crystal Ore

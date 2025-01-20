@@ -1,0 +1,26 @@
+Mods: {
+	Astaris: {
+		ItemName: {
+			AquamarineGem: Aquamarine Gemstone
+			RockCrystal: Rock Crystal
+			StarMetalBar: Star Metal Bar
+			StarMetalOre: Star Metal Ore
+			CrystalAxe: Crystal Axe
+			CrystalHammer: Crystal Hammer
+			CrystalPickaxe: Crystal Pickaxe
+			CrystalShortsword: Crystal Shortsword
+			CrystalSword: Crystal Broadsword
+		}
+
+		ItemTooltip: {
+			CrystalSword: Deals increased damage under a full moon.
+			CrystalShortsword: Deals increased damage under a full moon.
+		}
+
+		Tiles: {
+			StarmetalOre.MapEntry: Starmetal
+			RockCrystal.MapEntry: Rock Crystal
+			AquamarineShale.MapEntry: Aquamarine Shale
+		}
+	}
+}

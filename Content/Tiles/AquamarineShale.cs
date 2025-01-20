@@ -21,7 +21,9 @@ namespace Astaris.Content.Tiles
             TileID.Sets.CanBeDugByShovel[Type] = true;
             TileID.Sets.Falling[Type] = true;
             TileID.Sets.Suffocate[Type] = true;
-
+    
+            AddMapEntry(new Color(14, 96, 155), CreateMapEntryName());
+            
             // Tells which falling projectile to spawn when the tile should fall.
             TileID.Sets.FallingBlockProjectile[Type] = 
                 new TileID.Sets.FallingBlockProjectileInfo(ModContent.ProjectileType<AquamarineShaleBallFallingProjectile>(), 10);
@@ -29,6 +31,8 @@ namespace Astaris.Content.Tiles
             MineResist = 1f;
             DustType = DustID.Sand;
 
+            
+            
             RegisterItemDrop(ModContent.ItemType<AquamarineGem>());
         }
 
