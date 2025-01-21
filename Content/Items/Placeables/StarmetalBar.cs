@@ -33,5 +33,13 @@ namespace Astaris.Content.Items.Placeables
             Item.placeStyle = 0;
         }
 
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient<StarmetalOre>(4)
+                .AddTile(TileID.Anvils)
+                .Register();
+        }
+
     }
 }
