@@ -78,7 +78,7 @@ namespace Astaris.Content.Items.Weapons
 		{
 			CreateRecipe()
 				.AddIngredient(ModContent.ItemType<RockCrystal>(), 6) // ItemId, Qty
-				.AddTile(TileID.Anvils) // TileID
+				.AddTile<Tiles.StarlightAltar>()
 				.Register(); // Add Recipe
 		}
 

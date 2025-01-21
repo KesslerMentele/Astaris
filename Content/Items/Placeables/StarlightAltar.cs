@@ -1,4 +1,5 @@
-﻿using Terraria.GameContent.Creative;
+﻿using Terraria;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -27,6 +28,21 @@ public class StarlightAltar : ModItem
         Item.consumable = true;
 
         Item.createTile = ModContent.TileType<Tiles.StarlightAltar>();
+    }
+    
+    public override void AddRecipes()
+    {
+        Recipe baseRecipe = Recipe.Create(ModContent.ItemType<StarlightAltar>(), 1);
+        
+        baseRecipe.AddRecipeGroup(RecipeGroupID.Wood, 5)
+            .AddIngredient(ItemID.FallenStar, 5)
+            .AddIngredient(ItemID.SilverBar, 10)
+            .AddTile(TileID.Benches)
+            .Register();
+        Recipe altRecipe = baseRecipe.Clone();
+        altRecipe.AddIngredient(ItemID.TungstenBar, 10);
+        altRecipe.RemoveIngredient(ItemID.SilverBar);
+        altRecipe.Register();
     }
     
 }

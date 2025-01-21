@@ -44,7 +44,7 @@ namespace Astaris.Content.Items.Tools
 			CreateRecipe()
 				 .AddRecipeGroup(RecipeGroupID.Wood, 4)
 				 .AddIngredient(ModContent.ItemType<RockCrystal>(), 8)
-				 .AddTile(TileID.Anvils)
+				 .AddTile<Tiles.StarlightAltar>()
 				 .Register();
         }
 
