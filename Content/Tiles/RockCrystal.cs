@@ -23,7 +23,7 @@ namespace Astaris.Content.Tiles
             Main.tileLighted[Type] = true;
             Main.tileShine[Type] = 1150;
             Main.tileShine2[Type] = true;
-
+            
 
             HitSound = SoundID.Shatter;
             DustType = DustID.GemDiamond;
@@ -37,7 +37,9 @@ namespace Astaris.Content.Tiles
             TileObjectData.newTile.StyleMultiplier = 12;
             TileObjectData.newTile.StyleWrapLimit = 3;
             TileObjectData.newTile.RandomStyleRange = 3;
-
+            
+            
+            
 
             // PLACED ON CEILING
             TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
@@ -60,5 +62,6 @@ namespace Astaris.Content.Tiles
 
             TileObjectData.addTile(Type);
         }
+
     }
 }
