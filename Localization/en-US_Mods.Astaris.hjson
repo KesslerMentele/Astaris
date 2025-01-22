@@ -48,11 +48,17 @@ Items: {
 		DisplayName: Starlight Altar
 		Tooltip: ""
 	}
+
+	RockCrystalBullet: {
+		DisplayName: Rock Crystal Bullet
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
 	CrystalShortswordProjectile.DisplayName: Crystal Shortsword Projectile
 	AquamarineShaleBallFallingProjectile.DisplayName: Aquamarine Shale Ball Falling Projectile
+	RockCrystalBulletProjectile.DisplayName: Rock Crystal Bullet Projectile
 }
 
 Tiles: {

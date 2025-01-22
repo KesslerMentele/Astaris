@@ -2,6 +2,7 @@
 using Terraria.WorldBuilding;
 using System.Collections.Generic;
 using Astaris.Common.Systems.GenPasses;
+using Terraria;
 
 namespace Astaris.Common.Systems
 {
@@ -15,5 +16,7 @@ namespace Astaris.Common.Systems
                 tasks.Insert(surfaceOreIndex + 1, new AquamarineShaleGenPass("Aquamarine Shale Pass", 320f));
             }
         }
+        
+
     }
 }
