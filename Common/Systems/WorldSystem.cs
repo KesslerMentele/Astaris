@@ -1,6 +1,7 @@
 ﻿using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 using System.Collections.Generic;
+using System.Linq;
 using Astaris.Common.Systems.GenPasses;
 using Astaris.Content.Tiles;
 using Terraria;
@@ -24,19 +25,11 @@ namespace Astaris.Common.Systems
         public override void PostUpdateWorld()
         {
             
-            // if (!Main.hardMode)
-            // {
-            //     return; // Only run the code in hardmode
-            // }
+            if (!Main.hardMode || Main.rand.NextBool(2))
+            {
+                return; // Only run the code in hardmode
+            }
             
-
-
-
-
-            // if (!Main.rand.NextBool(5))
-            // {
-            //     return;
-            // }
             int i = Main.rand.Next(Main.maxTilesX);
             int j = Main.rand.Next((int)Main.worldSurface);
 
@@ -46,39 +39,24 @@ namespace Astaris.Common.Systems
             {
                 return;
             }
-
-            for (int num = 0; num < 4; num++)
+            
+            var signPairs = new (int, int)[]
             {
-                int num2 = 0;
-                int num3 = 0;
-
-                switch (num)
-                {
-                    case 0:
-                        num2 = 1;
-                        num3 = 1;
-                        break;
-                    case 1:
-                        num2 = 1;
-                        num3 = -1;
-                        break;
-                    case 2:
-                        num2 = -1;
-                        num3 = 1;
-                        break;
-                    case 3:
-                        num2 = -1;
-                        num3 = -1;
-                        break;
-                }
-
+                (1, 1),
+                (1, -1),
+                (-1, 1),
+                (-1, -1)
+            };
+            
+            var shuffled = signPairs.OrderBy(_ => Main.rand.Next()).ToList();
+            
+            foreach (var (num2, num3) in shuffled)
+            {
                 if (Main.tile[i + num2, j + num3].HasUnactuatedTile)
                 {
                     return;
                 }
-
-                bool placed = WorldGen.PlaceTile(i + num2, j + num3, ModContent.TileType<RockCrystal>(),
-                    true);
+                bool placed = WorldGen.PlaceTile(i + num2, j + num3, ModContent.TileType<RockCrystal>(), true);
                 if (placed)
                 {
                     break;
