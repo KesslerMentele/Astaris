@@ -53,12 +53,18 @@ Items: {
 		DisplayName: Rock Crystal Bullet
 		Tooltip: ""
 	}
+
+	CrystalLance: {
+		DisplayName: Crystal Lance
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
 	CrystalShortswordProjectile.DisplayName: Crystal Shortsword Projectile
 	AquamarineShaleBallFallingProjectile.DisplayName: Aquamarine Shale Ball Falling Projectile
 	RockCrystalBulletProjectile.DisplayName: Rock Crystal Bullet Projectile
+	RockCrystalProjectile.DisplayName: Rock Crystal Projectile
 }
 
 Tiles: {
