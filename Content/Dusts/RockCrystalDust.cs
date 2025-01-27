@@ -20,7 +20,7 @@ public class RockCrystalDust : ModDust
         {
             dust.active = false;
         }
-        Lighting.AddLight(dust.position,105, 121, 138 );
+        Lighting.AddLight(dust.position,0.5f, 0.6f, 0.7f );
         return false;
     }
 }
