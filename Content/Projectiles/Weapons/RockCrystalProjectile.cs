@@ -1,22 +1,27 @@
 ﻿using Astaris.Content.Dusts;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.GameContent;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Astaris.Content.Projectiles.Weapons;
 
 public class RockCrystalProjectile :  ModProjectile
 {
+    
+
+    
     public override void SetDefaults()
     {
         Projectile.width = 42;
         Projectile.height = 42;
         Projectile.scale = 0.5f;
-        DrawOffsetX = -11;
-        DrawOriginOffsetY = -12;
-        
+        DrawOriginOffsetY = 24;
+        DrawOriginOffsetX = 24;
         Projectile.friendly = true;
-        Projectile.tileCollide = false;
+        Projectile.tileCollide = true;
         Projectile.ignoreWater = true;
         
         Projectile.DamageType = DamageClass.Magic;
@@ -26,14 +31,13 @@ public class RockCrystalProjectile :  ModProjectile
         Projectile.timeLeft = 600;
         
     }
-
+    
+    
     public override void AI()
     {
         Projectile.ai[0]++;
-
-        float rotateSpeed = 0.5f * Projectile.direction;
         
-        Projectile.rotation += rotateSpeed;
+
         
         if (Projectile.ai[0] > 20f)
         {
@@ -47,7 +51,7 @@ public class RockCrystalProjectile :  ModProjectile
                 Projectile.Kill();
             }
         }
-        Lighting.AddLight(Projectile.Center, 105, 121, 138);
+        Lighting.AddLight(Projectile.Center, 0.5f, 0.6f, 0.7f);
 
         if (Main.rand.NextBool(2))
         {

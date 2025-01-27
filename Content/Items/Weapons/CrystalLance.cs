@@ -19,7 +19,7 @@ public class CrystalLance : ModItem
         Item.damage = 24;
         Item.knockBack = 2f;
 
-        Item.useTime = 25;
+        Item.useTime = 20;
         Item.useAnimation = 20;
         Item.autoReuse = true;
         
